@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --heading_text: "Italiana", sans-serif;
+    --normal_text: "Poppins", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    height: 100%;
+    padding-inline: .65em;
+}
+.count{
+    background-color: lavender;
+    aspect-ratio: 1;
+    height: 30px;
+    border-radius: .5em;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+h1{
+    font-family: var(--heading_text);
+    font-size: 10vw;
+    text-align: center;
+    margin-block: .5em;
+}
+form{
+    margin: auto;
+    /* background-color: red; */
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    gap: .5em;
+    font-family: var(--normal_text);
+
+
+    
+    input{
+        font-family: var(--normal_text);
+        height: 100%;
+        width: 100%;
+        border-radius: .5em;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        padding-left: .5em;
+    }
+    button{
+        width: 120px;
+        height: 100%;
+        cursor: pointer;
+        border-radius: .5em;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .25em;
+        border: 0;
+        outline: 0;
+        p{
+            font-size: 16px;
+            font-family: var(--normal_text);
+        }
+        svg{
+            height: 60%;
+            aspect-ratio: 1;
+
+        }
+    }
+    button:hover{
+        filter: invert(1);
+    }
+}
+ul{
+    list-style: none;
+    margin: .5em auto;
+    width: 450px;
+    font-family: var(--normal_text);
+
+    li{
+        background-color: white;
+        margin-block: .25em;
+        height: 45px;
+        border-radius: .5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: .25em;
+        border: 1.4px solid transparent;
+        
+
+        p{
+           font-size: 14px;
+        }
+
+        svg{
+            height: 25px;
+            aspect-ratio: 1;
+            border-radius: inherit;
+
+        }
+        svg:hover{
+            filter: brightness(300%);
+        }
+    }
+    li:hover{
+        border: 1.4px solid wheat;
+    }
+
+}
